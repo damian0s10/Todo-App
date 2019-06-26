@@ -1,0 +1,10 @@
+.task button {
+  text-transform: uppercase;
+  margin: 5px;
+  border: 2px solid #036345;
+  border-radius: 5px;
+  cursor: pointer;
+  background: #036345;
+  color: white;
+  font-weight: bold;
+}
