@@ -39,15 +39,15 @@ class App extends Component {
     });
     return true;
   };
-  componentWillMount() {
-    const tasks = localStorage.getItem("tasks");
-    this.setState({
-      tasks: JSON.parse(tasks)
-    });
-  }
-  componentDidUpdate() {
-    localStorage.setItem("tasks", JSON.stringify(this.state.tasks));
-  }
+  // componentWillMount() {
+  //   const tasks = localStorage.getItem("tasks");
+  //   this.setState({
+  //     tasks: JSON.parse(tasks)
+  //   });
+  // }
+  // componentDidUpdate() {
+  //   localStorage.setItem("tasks", JSON.stringify(this.state.tasks));
+  // }
   render() {
     return (
       <div className="App">
