@@ -39,11 +39,13 @@ class App extends Component {
     });
     return true;
   };
-  componentDidMount() {
+  componentWillMount() {
     const tasks = localStorage.getItem("tasks");
-    this.setState({
-      tasks: JSON.parse(tasks)
-    });
+    if (tasks) {
+      this.setState({
+        tasks: JSON.parse(tasks)
+      });
+    }
   }
   componentDidUpdate() {
     localStorage.setItem("tasks", JSON.stringify(this.state.tasks));
